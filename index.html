@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  </head>
+  <body>
+    <div class="container text-center mt-5" style="max-width: 400px;">
+      <h2>Countdown Timer</h2>
+      <input type="number" id="timeInput" class="form-control mb-3 w-100" placeholder="Enter Seconds" min="1" />
+      <button id="startBtn" class="btn btn-primary mb-2">Start</button>
+      <button id="pauseBtn" class="btn btn-warning mb-2" disabled>Pause</button>
+      <button id="resumeBtn" class="btn btn-success mb-2" disabled>Resume</button>
+      <button id="resetBtn" class="btn btn-secondary mb-2">Reset</button>
+      <h1 id="countdown" class="mt-4">00:00</h1>
+      <button id="mode-toggle" class="btn btn-info mt-3">
+        <i id="mode-icon" class="fas fa-moon"></i>
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+:root {
+    --background-color: #e0f7fa; 
+    --container-background: #ffffff; 
+    --text-color: #000000; 
+    --button-primary: #007bff; 
+    --button-secondary: #6c757d; 
+}
+
+.dark-mode {
+    --background-color: #343a40; 
+    --container-background: #495057; 
+    --text-color: #ffffff; 
+    --button-primary: #007bff;
+    --button-secondary: #6c757d; 
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+    height: 100vh; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin: 0; 
+}
+
+.container {
+    max-width: 400px; /* Set max width for the c*/
+    background-color: var(--container-background);
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 30px; /* Padding around the content */
+    text-align: center; /* Center text */
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: var(--button-primary);
+    color: #ffffff; /* White text for buttons */
+}
+
+button.secondary {
+    background-color: var(--button-secondary);
+}
+
+h1 {
+    font-size: 48px;
+    margin-top: 20px;
+}
+
+/* Transition for the icon */
+#mode-icon {
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+}
+
+.dark-mode #mode-icon {
+    transform: rotate(180deg); /* Rotate the icon in dark mode */
+} 
